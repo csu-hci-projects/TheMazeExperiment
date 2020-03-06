@@ -1,0 +1,1338 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 995438498, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 6
+  lastUpdatedAtString: 2020-02-16T17:37:18.947-07:00
+  initializedAtString: 2020-02-15T16:26:52.329-07:00
+  entries:
+  - path: Maze Experiment/Assets/Materials/Cube.mat
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Materials/Cube.mat
+    projectPath: Assets/Materials/Cube.mat
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Assets/Materials/Cube.mat.meta
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Materials/Cube.mat.meta
+    projectPath: Assets/Materials/Cube.mat.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Assets/Plugins/GitHub.meta
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub.meta
+    projectPath: Assets/Plugins/GitHub.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor.meta
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor.meta
+    projectPath: Assets/Plugins/GitHub/Editor.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/AsyncBridge.Net35.dll
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/AsyncBridge.Net35.dll
+    projectPath: Assets/Plugins/GitHub/Editor/AsyncBridge.Net35.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/AsyncBridge.Net35.dll.meta
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/AsyncBridge.Net35.dll.meta
+    projectPath: Assets/Plugins/GitHub/Editor/AsyncBridge.Net35.dll.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/big-logo@2x.png
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/big-logo@2x.png
+    projectPath: Assets/Plugins/GitHub/Editor/big-logo@2x.png
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/big-logo@2x.png.meta
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/big-logo@2x.png.meta
+    projectPath: Assets/Plugins/GitHub/Editor/big-logo@2x.png.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/credits.txt
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/credits.txt
+    projectPath: Assets/Plugins/GitHub/Editor/credits.txt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/credits.txt.meta
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/credits.txt.meta
+    projectPath: Assets/Plugins/GitHub/Editor/credits.txt.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/eula.txt
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/eula.txt
+    projectPath: Assets/Plugins/GitHub/Editor/eula.txt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/eula.txt.meta
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/eula.txt.meta
+    projectPath: Assets/Plugins/GitHub/Editor/eula.txt.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/ExtensionLoader.cs
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/ExtensionLoader.cs
+    projectPath: Assets/Plugins/GitHub/Editor/ExtensionLoader.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/ExtensionLoader.cs.meta
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/ExtensionLoader.cs.meta
+    projectPath: Assets/Plugins/GitHub/Editor/ExtensionLoader.cs.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/GitHub.Api.45.dll
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/GitHub.Api.45.dll
+    projectPath: Assets/Plugins/GitHub/Editor/GitHub.Api.45.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/GitHub.Api.45.dll.meta
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/GitHub.Api.45.dll.meta
+    projectPath: Assets/Plugins/GitHub/Editor/GitHub.Api.45.dll.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/GitHub.Api.dll
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/GitHub.Api.dll
+    projectPath: Assets/Plugins/GitHub/Editor/GitHub.Api.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/GitHub.Api.dll.meta
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/GitHub.Api.dll.meta
+    projectPath: Assets/Plugins/GitHub/Editor/GitHub.Api.dll.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/GitHub.Logging.dll
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/GitHub.Logging.dll
+    projectPath: Assets/Plugins/GitHub/Editor/GitHub.Logging.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/GitHub.Logging.dll.meta
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/GitHub.Logging.dll.meta
+    projectPath: Assets/Plugins/GitHub/Editor/GitHub.Logging.dll.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/GitHub.Unity.45.dll
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/GitHub.Unity.45.dll
+    projectPath: Assets/Plugins/GitHub/Editor/GitHub.Unity.45.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/GitHub.Unity.45.dll.meta
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/GitHub.Unity.45.dll.meta
+    projectPath: Assets/Plugins/GitHub/Editor/GitHub.Unity.45.dll.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/GitHub.Unity.dll
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/GitHub.Unity.dll
+    projectPath: Assets/Plugins/GitHub/Editor/GitHub.Unity.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/GitHub.Unity.dll.meta
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/GitHub.Unity.dll.meta
+    projectPath: Assets/Plugins/GitHub/Editor/GitHub.Unity.dll.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/GitHub.UnityShim.dll
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/GitHub.UnityShim.dll
+    projectPath: Assets/Plugins/GitHub/Editor/GitHub.UnityShim.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/GitHub.UnityShim.dll.meta
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/GitHub.UnityShim.dll.meta
+    projectPath: Assets/Plugins/GitHub/Editor/GitHub.UnityShim.dll.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/libsfw.bundle
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/libsfw.bundle
+    projectPath: Assets/Plugins/GitHub/Editor/libsfw.bundle
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/libsfw.bundle.meta
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/libsfw.bundle.meta
+    projectPath: Assets/Plugins/GitHub/Editor/libsfw.bundle.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/libsfw.so
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/libsfw.so
+    projectPath: Assets/Plugins/GitHub/Editor/libsfw.so
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/libsfw.so.meta
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/libsfw.so.meta
+    projectPath: Assets/Plugins/GitHub/Editor/libsfw.so.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/Mono.Posix.dll
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/Mono.Posix.dll
+    projectPath: Assets/Plugins/GitHub/Editor/Mono.Posix.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/Mono.Posix.dll.meta
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/Mono.Posix.dll.meta
+    projectPath: Assets/Plugins/GitHub/Editor/Mono.Posix.dll.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/QuickGuide.pdf
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/QuickGuide.pdf
+    projectPath: Assets/Plugins/GitHub/Editor/QuickGuide.pdf
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/QuickGuide.pdf.meta
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/QuickGuide.pdf.meta
+    projectPath: Assets/Plugins/GitHub/Editor/QuickGuide.pdf.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/ReadOnlyCollectionsInterfaces.dll
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/ReadOnlyCollectionsInterfaces.dll
+    projectPath: Assets/Plugins/GitHub/Editor/ReadOnlyCollectionsInterfaces.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/ReadOnlyCollectionsInterfaces.dll.meta
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/ReadOnlyCollectionsInterfaces.dll.meta
+    projectPath: Assets/Plugins/GitHub/Editor/ReadOnlyCollectionsInterfaces.dll.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/sfw.net.dll
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/sfw.net.dll
+    projectPath: Assets/Plugins/GitHub/Editor/sfw.net.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/sfw.net.dll.meta
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/sfw.net.dll.meta
+    projectPath: Assets/Plugins/GitHub/Editor/sfw.net.dll.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/System.Threading.dll
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/System.Threading.dll
+    projectPath: Assets/Plugins/GitHub/Editor/System.Threading.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/System.Threading.dll.meta
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/System.Threading.dll.meta
+    projectPath: Assets/Plugins/GitHub/Editor/System.Threading.dll.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/UnityAPIWrapper.cs
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/UnityAPIWrapper.cs
+    projectPath: Assets/Plugins/GitHub/Editor/UnityAPIWrapper.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/UnityAPIWrapper.cs.meta
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/UnityAPIWrapper.cs.meta
+    projectPath: Assets/Plugins/GitHub/Editor/UnityAPIWrapper.cs.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/x64.meta
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/x64.meta
+    projectPath: Assets/Plugins/GitHub/Editor/x64.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/x64/pthreadVC2.dll
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/x64/pthreadVC2.dll
+    projectPath: Assets/Plugins/GitHub/Editor/x64/pthreadVC2.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/x64/pthreadVC2.dll.meta
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/x64/pthreadVC2.dll.meta
+    projectPath: Assets/Plugins/GitHub/Editor/x64/pthreadVC2.dll.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/x64/sfw_x64.dll
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/x64/sfw_x64.dll
+    projectPath: Assets/Plugins/GitHub/Editor/x64/sfw_x64.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/x64/sfw_x64.dll.meta
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/x64/sfw_x64.dll.meta
+    projectPath: Assets/Plugins/GitHub/Editor/x64/sfw_x64.dll.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/x86.meta
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/x86.meta
+    projectPath: Assets/Plugins/GitHub/Editor/x86.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/x86/pthreadVC2.dll
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/x86/pthreadVC2.dll
+    projectPath: Assets/Plugins/GitHub/Editor/x86/pthreadVC2.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/x86/pthreadVC2.dll.meta
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/x86/pthreadVC2.dll.meta
+    projectPath: Assets/Plugins/GitHub/Editor/x86/pthreadVC2.dll.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/x86/sfw_x86.dll
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/x86/sfw_x86.dll
+    projectPath: Assets/Plugins/GitHub/Editor/x86/sfw_x86.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Plugins/GitHub/Editor/x86/sfw_x86.dll.meta
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Plugins/GitHub/Editor/x86/sfw_x86.dll.meta
+    projectPath: Assets/Plugins/GitHub/Editor/x86/sfw_x86.dll.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Assets/Scenes/MainMenuScene.unity
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Scenes/MainMenuScene.unity
+    projectPath: Assets/Scenes/MainMenuScene.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Maze Experiment/Assets/Scenes/MazeScene.unity
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Scenes/MazeScene.unity
+    projectPath: Assets/Scenes/MazeScene.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Maze Experiment/Assets/Scripts/Constraints.cs
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Scripts/Constraints.cs
+    projectPath: Assets/Scripts/Constraints.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Maze Experiment/Assets/Scripts/PlayerController.cs
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Assets/Scripts/PlayerController.cs
+    projectPath: Assets/Scripts/PlayerController.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Maze Experiment/Library/ArtifactDB
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/ArtifactDB
+    projectPath: Library/ArtifactDB
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Maze Experiment/Library/Artifacts/06/066882b1c364558a6aae0f55bba11b07
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/06/066882b1c364558a6aae0f55bba11b07
+    projectPath: Library/Artifacts/06/066882b1c364558a6aae0f55bba11b07
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/0d/0da1ee66e43c6304be7740a0350e6099
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/0d/0da1ee66e43c6304be7740a0350e6099
+    projectPath: Library/Artifacts/0d/0da1ee66e43c6304be7740a0350e6099
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/15/1512bd2fe3d972bae0bf28cf27a60025
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/15/1512bd2fe3d972bae0bf28cf27a60025
+    projectPath: Library/Artifacts/15/1512bd2fe3d972bae0bf28cf27a60025
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/1c/1c20436c1007678f4da7f684a7f505dd
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/1c/1c20436c1007678f4da7f684a7f505dd
+    projectPath: Library/Artifacts/1c/1c20436c1007678f4da7f684a7f505dd
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/22/2201ec4ca7eef32b4ec8b13ae46e61ba
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/22/2201ec4ca7eef32b4ec8b13ae46e61ba
+    projectPath: Library/Artifacts/22/2201ec4ca7eef32b4ec8b13ae46e61ba
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/25/25eb0225a0298eb552885e51cdf00d91
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/25/25eb0225a0298eb552885e51cdf00d91
+    projectPath: Library/Artifacts/25/25eb0225a0298eb552885e51cdf00d91
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/27/27b388c5d142c136da3087b2b6a76805
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/27/27b388c5d142c136da3087b2b6a76805
+    projectPath: Library/Artifacts/27/27b388c5d142c136da3087b2b6a76805
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/33/3340e4fdfb4c653cec9248cd06bb24ad
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/33/3340e4fdfb4c653cec9248cd06bb24ad
+    projectPath: Library/Artifacts/33/3340e4fdfb4c653cec9248cd06bb24ad
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/39/39b477d8ccb8ca2de5042add513da3ca
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/39/39b477d8ccb8ca2de5042add513da3ca
+    projectPath: Library/Artifacts/39/39b477d8ccb8ca2de5042add513da3ca
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/3f/3f2cd08e8efdfc0397390f03f88d16c9
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/3f/3f2cd08e8efdfc0397390f03f88d16c9
+    projectPath: Library/Artifacts/3f/3f2cd08e8efdfc0397390f03f88d16c9
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/44/44590e4429373baf0c3153639b7027bc
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/44/44590e4429373baf0c3153639b7027bc
+    projectPath: Library/Artifacts/44/44590e4429373baf0c3153639b7027bc
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/44/44a0baf5fe0b2c426c6f32da4e83f267
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/44/44a0baf5fe0b2c426c6f32da4e83f267
+    projectPath: Library/Artifacts/44/44a0baf5fe0b2c426c6f32da4e83f267
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/4b/4b08c8ca5121a5fe9dc62d231eedb9a4
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/4b/4b08c8ca5121a5fe9dc62d231eedb9a4
+    projectPath: Library/Artifacts/4b/4b08c8ca5121a5fe9dc62d231eedb9a4
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/4f/4f7074a728fd87792fd4a7146531ae23
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/4f/4f7074a728fd87792fd4a7146531ae23
+    projectPath: Library/Artifacts/4f/4f7074a728fd87792fd4a7146531ae23
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/4f/4fdf4d5f6961ecac297d116daeb5de82
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/4f/4fdf4d5f6961ecac297d116daeb5de82
+    projectPath: Library/Artifacts/4f/4fdf4d5f6961ecac297d116daeb5de82
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/52/520b4aa7f818c17fb8bfff9a8d4e99b1
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/52/520b4aa7f818c17fb8bfff9a8d4e99b1
+    projectPath: Library/Artifacts/52/520b4aa7f818c17fb8bfff9a8d4e99b1
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/54/5431e300215e869c0af9892f3d715d41
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/54/5431e300215e869c0af9892f3d715d41
+    projectPath: Library/Artifacts/54/5431e300215e869c0af9892f3d715d41
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/5a/5a35df11728cc793c03a49df5a22ff45
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/5a/5a35df11728cc793c03a49df5a22ff45
+    projectPath: Library/Artifacts/5a/5a35df11728cc793c03a49df5a22ff45
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/5e/5eb57730164036f92bab160d4b3e6354
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/5e/5eb57730164036f92bab160d4b3e6354
+    projectPath: Library/Artifacts/5e/5eb57730164036f92bab160d4b3e6354
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/73/73e9dc1c904b204c8f1928470b492ac7
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/73/73e9dc1c904b204c8f1928470b492ac7
+    projectPath: Library/Artifacts/73/73e9dc1c904b204c8f1928470b492ac7
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/74/745fc33fce692e46ae7bd7cb2dad1c0f
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/74/745fc33fce692e46ae7bd7cb2dad1c0f
+    projectPath: Library/Artifacts/74/745fc33fce692e46ae7bd7cb2dad1c0f
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/77/7749a48bafad989d9fba263e9e156d87
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/77/7749a48bafad989d9fba263e9e156d87
+    projectPath: Library/Artifacts/77/7749a48bafad989d9fba263e9e156d87
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/7c/7cf1b30cbeec2dfa5b8fc07771f62c4e
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/7c/7cf1b30cbeec2dfa5b8fc07771f62c4e
+    projectPath: Library/Artifacts/7c/7cf1b30cbeec2dfa5b8fc07771f62c4e
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/84/84601f2bcf0a315964dd318f841f8c54
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/84/84601f2bcf0a315964dd318f841f8c54
+    projectPath: Library/Artifacts/84/84601f2bcf0a315964dd318f841f8c54
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/86/86fec9e4122b9147fe02b4beab3fafa8
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/86/86fec9e4122b9147fe02b4beab3fafa8
+    projectPath: Library/Artifacts/86/86fec9e4122b9147fe02b4beab3fafa8
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/8d/8d93008e601b0023f97450c8ab58dc1b
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/8d/8d93008e601b0023f97450c8ab58dc1b
+    projectPath: Library/Artifacts/8d/8d93008e601b0023f97450c8ab58dc1b
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/8f/8f408210fc96a442672b59c89e6691f0
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/8f/8f408210fc96a442672b59c89e6691f0
+    projectPath: Library/Artifacts/8f/8f408210fc96a442672b59c89e6691f0
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/90/907326b4555534cb4b27a0c6ce51ac74
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/90/907326b4555534cb4b27a0c6ce51ac74
+    projectPath: Library/Artifacts/90/907326b4555534cb4b27a0c6ce51ac74
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/97/97d9dabd51f6179182350f77c817e613
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/97/97d9dabd51f6179182350f77c817e613
+    projectPath: Library/Artifacts/97/97d9dabd51f6179182350f77c817e613
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/98/98fba44560175cc09ff5cf57e0684ed6
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/98/98fba44560175cc09ff5cf57e0684ed6
+    projectPath: Library/Artifacts/98/98fba44560175cc09ff5cf57e0684ed6
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/9f/9fd372c49c37dfbcf1535823c785d07b
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/9f/9fd372c49c37dfbcf1535823c785d07b
+    projectPath: Library/Artifacts/9f/9fd372c49c37dfbcf1535823c785d07b
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/a1/a11299e0a2d8ea6505fe13f22399b412
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/a1/a11299e0a2d8ea6505fe13f22399b412
+    projectPath: Library/Artifacts/a1/a11299e0a2d8ea6505fe13f22399b412
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/a3/a30c612e4904f8ae8a9b39be8306cc8c
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/a3/a30c612e4904f8ae8a9b39be8306cc8c
+    projectPath: Library/Artifacts/a3/a30c612e4904f8ae8a9b39be8306cc8c
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/a4/a4ac7b27803a999d0a20b625ff6c2ae4
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/a4/a4ac7b27803a999d0a20b625ff6c2ae4
+    projectPath: Library/Artifacts/a4/a4ac7b27803a999d0a20b625ff6c2ae4
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/a4/a4d8e749add81d4440ee17e5fac7a06c
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/a4/a4d8e749add81d4440ee17e5fac7a06c
+    projectPath: Library/Artifacts/a4/a4d8e749add81d4440ee17e5fac7a06c
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/a9/a9ff52efd7ac0e0ebe28eb59e36c1c29
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/a9/a9ff52efd7ac0e0ebe28eb59e36c1c29
+    projectPath: Library/Artifacts/a9/a9ff52efd7ac0e0ebe28eb59e36c1c29
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/af/afa2bac4266050afc7f758e9fe833a6a
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/af/afa2bac4266050afc7f758e9fe833a6a
+    projectPath: Library/Artifacts/af/afa2bac4266050afc7f758e9fe833a6a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/b0/b014bfefffee37ee94960bedd063b656
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/b0/b014bfefffee37ee94960bedd063b656
+    projectPath: Library/Artifacts/b0/b014bfefffee37ee94960bedd063b656
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/b6/b6ca4f6804f25ca33c1061cd0d58fd9d
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/b6/b6ca4f6804f25ca33c1061cd0d58fd9d
+    projectPath: Library/Artifacts/b6/b6ca4f6804f25ca33c1061cd0d58fd9d
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/be/be32b589bf4c422e45f48e7181502361
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/be/be32b589bf4c422e45f48e7181502361
+    projectPath: Library/Artifacts/be/be32b589bf4c422e45f48e7181502361
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/c3/c3e98213ae2e4a1363cd29e858fca6fd
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/c3/c3e98213ae2e4a1363cd29e858fca6fd
+    projectPath: Library/Artifacts/c3/c3e98213ae2e4a1363cd29e858fca6fd
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/c6/c6f8045ee5496666c47936f210210fa1
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/c6/c6f8045ee5496666c47936f210210fa1
+    projectPath: Library/Artifacts/c6/c6f8045ee5496666c47936f210210fa1
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/c8/c8db5328ceffffbbe9f9ca83a7393900
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/c8/c8db5328ceffffbbe9f9ca83a7393900
+    projectPath: Library/Artifacts/c8/c8db5328ceffffbbe9f9ca83a7393900
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/c9/c9b433ccf530f5734ba6fc211493bd47
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/c9/c9b433ccf530f5734ba6fc211493bd47
+    projectPath: Library/Artifacts/c9/c9b433ccf530f5734ba6fc211493bd47
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/cd/cd229bb275d10a92ce8290e13b8b1108
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/cd/cd229bb275d10a92ce8290e13b8b1108
+    projectPath: Library/Artifacts/cd/cd229bb275d10a92ce8290e13b8b1108
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/cf/cf44d4122a6357a2810b93da87d9c1c1
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/cf/cf44d4122a6357a2810b93da87d9c1c1
+    projectPath: Library/Artifacts/cf/cf44d4122a6357a2810b93da87d9c1c1
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/da/da575d3dceaefee0e01cf7b873950ca3
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/da/da575d3dceaefee0e01cf7b873950ca3
+    projectPath: Library/Artifacts/da/da575d3dceaefee0e01cf7b873950ca3
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/dc/dcf172cf7737ba1cf5eefb175559ad77
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/dc/dcf172cf7737ba1cf5eefb175559ad77
+    projectPath: Library/Artifacts/dc/dcf172cf7737ba1cf5eefb175559ad77
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/dd/ddfa6063bc2571f6df2bac390e4cb88d
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/dd/ddfa6063bc2571f6df2bac390e4cb88d
+    projectPath: Library/Artifacts/dd/ddfa6063bc2571f6df2bac390e4cb88d
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/df/df97933d7ccf442022042222339836db
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/df/df97933d7ccf442022042222339836db
+    projectPath: Library/Artifacts/df/df97933d7ccf442022042222339836db
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/e0/e0ee8ad6aa6539941fff571731555638
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/e0/e0ee8ad6aa6539941fff571731555638
+    projectPath: Library/Artifacts/e0/e0ee8ad6aa6539941fff571731555638
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/ee/ee4ca5a78f30e4ce8f5aec79cff452d3
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/ee/ee4ca5a78f30e4ce8f5aec79cff452d3
+    projectPath: Library/Artifacts/ee/ee4ca5a78f30e4ce8f5aec79cff452d3
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/ee/eebd5e17ceab167616f2700f4819706f
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/ee/eebd5e17ceab167616f2700f4819706f
+    projectPath: Library/Artifacts/ee/eebd5e17ceab167616f2700f4819706f
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/ef/efecca8b8a79b6713c01060e7a12a591
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/ef/efecca8b8a79b6713c01060e7a12a591
+    projectPath: Library/Artifacts/ef/efecca8b8a79b6713c01060e7a12a591
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/f2/f2ff10ddfec992c3f694b1542a6f70b5
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/f2/f2ff10ddfec992c3f694b1542a6f70b5
+    projectPath: Library/Artifacts/f2/f2ff10ddfec992c3f694b1542a6f70b5
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/f5/f5239b1b0e709d4031cbb39b3527b05e
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/f5/f5239b1b0e709d4031cbb39b3527b05e
+    projectPath: Library/Artifacts/f5/f5239b1b0e709d4031cbb39b3527b05e
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/f5/f529df9b4626d7a082e3b9a6c63740de
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/f5/f529df9b4626d7a082e3b9a6c63740de
+    projectPath: Library/Artifacts/f5/f529df9b4626d7a082e3b9a6c63740de
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/f7/f750a68d36ba22d8b5efeecdb7640da0
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/f7/f750a68d36ba22d8b5efeecdb7640da0
+    projectPath: Library/Artifacts/f7/f750a68d36ba22d8b5efeecdb7640da0
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/fa/fa2d8d1d3d87b9b054b38b983b8f81ea
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/fa/fa2d8d1d3d87b9b054b38b983b8f81ea
+    projectPath: Library/Artifacts/fa/fa2d8d1d3d87b9b054b38b983b8f81ea
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/Artifacts/fe/fedd90d66319862d0e70a9f48285e25a
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/Artifacts/fe/fedd90d66319862d0e70a9f48285e25a
+    projectPath: Library/Artifacts/fe/fedd90d66319862d0e70a9f48285e25a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/gfu/cache/branches.yaml
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/gfu/cache/branches.yaml
+    projectPath: Library/gfu/cache/branches.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Maze Experiment/Library/gfu/cache/gitlocks.yaml
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/gfu/cache/gitlocks.yaml
+    projectPath: Library/gfu/cache/gitlocks.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Maze Experiment/Library/gfu/cache/gitlog.yaml
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/gfu/cache/gitlog.yaml
+    projectPath: Library/gfu/cache/gitlog.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Maze Experiment/Library/gfu/cache/gitstatusentries.yaml
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/gfu/cache/gitstatusentries.yaml
+    projectPath: Library/gfu/cache/gitstatusentries.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Maze Experiment/Library/gfu/cache/gittrackingstatus.yaml
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/gfu/cache/gittrackingstatus.yaml
+    projectPath: Library/gfu/cache/gittrackingstatus.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Maze Experiment/Library/gfu/cache/repoinfo.yaml
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/gfu/cache/repoinfo.yaml
+    projectPath: Library/gfu/cache/repoinfo.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Maze Experiment/Library/InspectorExpandedItems.asset
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/InspectorExpandedItems.asset
+    projectPath: Library/InspectorExpandedItems.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Maze Experiment/Library/PackageCache/com.unity.render-pipelines.universal@7.1.8/Runtime/Materials/Lit.mat
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/PackageCache/com.unity.render-pipelines.universal@7.1.8/Runtime/Materials/Lit.mat
+    projectPath: Library/PackageCache/com.unity.render-pipelines.universal@7.1.8/Runtime/Materials/Lit.mat
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Maze Experiment/Library/PackageCache/com.unity.render-pipelines.universal@7.1.8/Runtime/Materials/ParticlesLit.mat
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/PackageCache/com.unity.render-pipelines.universal@7.1.8/Runtime/Materials/ParticlesLit.mat
+    projectPath: Library/PackageCache/com.unity.render-pipelines.universal@7.1.8/Runtime/Materials/ParticlesLit.mat
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Maze Experiment/Library/PackageCache/com.unity.render-pipelines.universal@7.1.8/Runtime/Materials/SimpleLit.mat
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/PackageCache/com.unity.render-pipelines.universal@7.1.8/Runtime/Materials/SimpleLit.mat
+    projectPath: Library/PackageCache/com.unity.render-pipelines.universal@7.1.8/Runtime/Materials/SimpleLit.mat
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Maze Experiment/Library/SceneVisibilityState.asset
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/SceneVisibilityState.asset
+    projectPath: Library/SceneVisibilityState.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Maze Experiment/Library/ScriptAssemblies/Assembly-CSharp.dll
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/ScriptAssemblies/Assembly-CSharp.dll
+    projectPath: Library/ScriptAssemblies/Assembly-CSharp.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Maze Experiment/Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll
+    projectPath: Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Library/ScriptAssemblies/BuiltinAssemblies.stamp
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/ScriptAssemblies/BuiltinAssemblies.stamp
+    projectPath: Library/ScriptAssemblies/BuiltinAssemblies.stamp
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Maze Experiment/Library/ShaderCache/1/10b2a3993950aee385b7d3b202211581.bin
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/ShaderCache/1/10b2a3993950aee385b7d3b202211581.bin
+    projectPath: Library/ShaderCache/1/10b2a3993950aee385b7d3b202211581.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/ShaderCache/1/1bd2733baa8975e2bbc65dbe8da3bfa0.bin
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/ShaderCache/1/1bd2733baa8975e2bbc65dbe8da3bfa0.bin
+    projectPath: Library/ShaderCache/1/1bd2733baa8975e2bbc65dbe8da3bfa0.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/ShaderCache/2/21f112d68dd93c850f9ab3b18e002528.bin
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/ShaderCache/2/21f112d68dd93c850f9ab3b18e002528.bin
+    projectPath: Library/ShaderCache/2/21f112d68dd93c850f9ab3b18e002528.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/ShaderCache/3/38313b00156a0345298811762b3c269a.bin
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/ShaderCache/3/38313b00156a0345298811762b3c269a.bin
+    projectPath: Library/ShaderCache/3/38313b00156a0345298811762b3c269a.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/ShaderCache/4/4a48c2125db0caf700f0ed9f839bf1a2.bin
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/ShaderCache/4/4a48c2125db0caf700f0ed9f839bf1a2.bin
+    projectPath: Library/ShaderCache/4/4a48c2125db0caf700f0ed9f839bf1a2.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/ShaderCache/6/68b9ff9fc3c715568d8399f41ffc6abd.bin
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/ShaderCache/6/68b9ff9fc3c715568d8399f41ffc6abd.bin
+    projectPath: Library/ShaderCache/6/68b9ff9fc3c715568d8399f41ffc6abd.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/ShaderCache/8/890b7cc1445df0a038d3696d023ccd82.bin
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/ShaderCache/8/890b7cc1445df0a038d3696d023ccd82.bin
+    projectPath: Library/ShaderCache/8/890b7cc1445df0a038d3696d023ccd82.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/ShaderCache/8/8d1edfe6791586b1241bf185da9dab23.bin
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/ShaderCache/8/8d1edfe6791586b1241bf185da9dab23.bin
+    projectPath: Library/ShaderCache/8/8d1edfe6791586b1241bf185da9dab23.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/ShaderCache/8/8da971f357b2f1ed34c4c131129f424a.bin
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/ShaderCache/8/8da971f357b2f1ed34c4c131129f424a.bin
+    projectPath: Library/ShaderCache/8/8da971f357b2f1ed34c4c131129f424a.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/ShaderCache/9/922c4a9e629f296116fc3e9776c096e1.bin
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/ShaderCache/9/922c4a9e629f296116fc3e9776c096e1.bin
+    projectPath: Library/ShaderCache/9/922c4a9e629f296116fc3e9776c096e1.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/ShaderCache/9/96f7a98ae82cf2d0c1892bb93740344e.bin
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/ShaderCache/9/96f7a98ae82cf2d0c1892bb93740344e.bin
+    projectPath: Library/ShaderCache/9/96f7a98ae82cf2d0c1892bb93740344e.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/ShaderCache/a/a3f14872c71828dac75013f64df18ec9.bin
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/ShaderCache/a/a3f14872c71828dac75013f64df18ec9.bin
+    projectPath: Library/ShaderCache/a/a3f14872c71828dac75013f64df18ec9.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/ShaderCache/a/ac2765aff8d02e96824533f3f1ee97fe.bin
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/ShaderCache/a/ac2765aff8d02e96824533f3f1ee97fe.bin
+    projectPath: Library/ShaderCache/a/ac2765aff8d02e96824533f3f1ee97fe.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/ShaderCache/b/baa19be4dd28550b6d96432cacc7f58e.bin
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/ShaderCache/b/baa19be4dd28550b6d96432cacc7f58e.bin
+    projectPath: Library/ShaderCache/b/baa19be4dd28550b6d96432cacc7f58e.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/ShaderCache/b/be56419b62b21305ec5d3f92ff920031.bin
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/ShaderCache/b/be56419b62b21305ec5d3f92ff920031.bin
+    projectPath: Library/ShaderCache/b/be56419b62b21305ec5d3f92ff920031.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/ShaderCache/c/c4de15d00b38746bb38296cd0ff786cc.bin
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/ShaderCache/c/c4de15d00b38746bb38296cd0ff786cc.bin
+    projectPath: Library/ShaderCache/c/c4de15d00b38746bb38296cd0ff786cc.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/ShaderCache/d/d19f125001cbdd8edb3382eb701eea82.bin
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/ShaderCache/d/d19f125001cbdd8edb3382eb701eea82.bin
+    projectPath: Library/ShaderCache/d/d19f125001cbdd8edb3382eb701eea82.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/ShaderCache/d/d3781d832304be7b5e57382a6cf54748.bin
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/ShaderCache/d/d3781d832304be7b5e57382a6cf54748.bin
+    projectPath: Library/ShaderCache/d/d3781d832304be7b5e57382a6cf54748.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/ShaderCache/d/d7d041fdbbff0acb50372aaafb3aa4b9.bin
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/ShaderCache/d/d7d041fdbbff0acb50372aaafb3aa4b9.bin
+    projectPath: Library/ShaderCache/d/d7d041fdbbff0acb50372aaafb3aa4b9.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/ShaderCache/d/dc2cca2270015b9405e95dc0ea17bbd1.bin
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/ShaderCache/d/dc2cca2270015b9405e95dc0ea17bbd1.bin
+    projectPath: Library/ShaderCache/d/dc2cca2270015b9405e95dc0ea17bbd1.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/ShaderCache/e/e51e1d475a7864ee1a20f0f5f0800868.bin
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/ShaderCache/e/e51e1d475a7864ee1a20f0f5f0800868.bin
+    projectPath: Library/ShaderCache/e/e51e1d475a7864ee1a20f0f5f0800868.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/ShaderCache/EditorEncounteredVariants
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/ShaderCache/EditorEncounteredVariants
+    projectPath: Library/ShaderCache/EditorEncounteredVariants
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Maze Experiment/Library/ShaderCache/f/f59a088d78def7512278051e97fb23cb.bin
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/ShaderCache/f/f59a088d78def7512278051e97fb23cb.bin
+    projectPath: Library/ShaderCache/f/f59a088d78def7512278051e97fb23cb.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Library/shadercompiler-UnityShaderCompiler0.log
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/shadercompiler-UnityShaderCompiler0.log
+    projectPath: Library/shadercompiler-UnityShaderCompiler0.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Maze Experiment/Library/shadercompiler-UnityShaderCompiler1.log
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/shadercompiler-UnityShaderCompiler1.log
+    projectPath: Library/shadercompiler-UnityShaderCompiler1.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Maze Experiment/Library/shadercompiler-UnityShaderCompiler2.log
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/shadercompiler-UnityShaderCompiler2.log
+    projectPath: Library/shadercompiler-UnityShaderCompiler2.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Maze Experiment/Library/shadercompiler-UnityShaderCompiler3.log
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/shadercompiler-UnityShaderCompiler3.log
+    projectPath: Library/shadercompiler-UnityShaderCompiler3.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Maze Experiment/Library/SourceAssetDB
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/SourceAssetDB
+    projectPath: Library/SourceAssetDB
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Maze Experiment/Library/StateCache/Hierarchy/2b37be-mainStage.json
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/StateCache/Hierarchy/2b37be-mainStage.json
+    projectPath: Library/StateCache/Hierarchy/2b37be-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Maze Experiment/Library/StateCache/SceneView/be678a-mainStage.json
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Library/StateCache/SceneView/be678a-mainStage.json
+    projectPath: Library/StateCache/SceneView/be678a-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Maze Experiment/obj/Debug/Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/obj/Debug/Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    projectPath: obj/Debug/Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Maze Experiment/ProjectSettings/QualitySettings.asset
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/ProjectSettings/QualitySettings.asset
+    projectPath: ProjectSettings/QualitySettings.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Maze Experiment/Temp/__Backupscenes/0.backup
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/__Backupscenes/0.backup
+    projectPath: Temp/__Backupscenes/0.backup
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Maze Experiment/Temp/UnityTempFile-009d772970896444380bf34eaec880c2
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-009d772970896444380bf34eaec880c2
+    projectPath: Temp/UnityTempFile-009d772970896444380bf34eaec880c2
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-02a07c8dac7f249e8a19b726b9fb3466
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-02a07c8dac7f249e8a19b726b9fb3466
+    projectPath: Temp/UnityTempFile-02a07c8dac7f249e8a19b726b9fb3466
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-03bd3d1ff89c248d6a706b5152802257
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-03bd3d1ff89c248d6a706b5152802257
+    projectPath: Temp/UnityTempFile-03bd3d1ff89c248d6a706b5152802257
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-05f64267e7db8414faa74935d3bb75c2
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-05f64267e7db8414faa74935d3bb75c2
+    projectPath: Temp/UnityTempFile-05f64267e7db8414faa74935d3bb75c2
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-0e4f3f70f4a98416a9d8219d178e9b9a
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-0e4f3f70f4a98416a9d8219d178e9b9a
+    projectPath: Temp/UnityTempFile-0e4f3f70f4a98416a9d8219d178e9b9a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-10cb4d04e66bf4d7cba959631b7b7e6a
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-10cb4d04e66bf4d7cba959631b7b7e6a
+    projectPath: Temp/UnityTempFile-10cb4d04e66bf4d7cba959631b7b7e6a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-11c68a5f73135418b99623a25d470b23
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-11c68a5f73135418b99623a25d470b23
+    projectPath: Temp/UnityTempFile-11c68a5f73135418b99623a25d470b23
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-137f719b0bbdc44d4bf9d3d31c4a6308
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-137f719b0bbdc44d4bf9d3d31c4a6308
+    projectPath: Temp/UnityTempFile-137f719b0bbdc44d4bf9d3d31c4a6308
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-197c655d8fc1a4bd997141458a50e8b8
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-197c655d8fc1a4bd997141458a50e8b8
+    projectPath: Temp/UnityTempFile-197c655d8fc1a4bd997141458a50e8b8
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-1bac54379e162486e879b8b2a9ce9b90
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-1bac54379e162486e879b8b2a9ce9b90
+    projectPath: Temp/UnityTempFile-1bac54379e162486e879b8b2a9ce9b90
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-1c5c468287a8147a5ac26689d6cc5403
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-1c5c468287a8147a5ac26689d6cc5403
+    projectPath: Temp/UnityTempFile-1c5c468287a8147a5ac26689d6cc5403
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-26dd5f9e7f67a4139a41e0c6163eb337
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-26dd5f9e7f67a4139a41e0c6163eb337
+    projectPath: Temp/UnityTempFile-26dd5f9e7f67a4139a41e0c6163eb337
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-28dfb69038fc546bba55387162301c6a
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-28dfb69038fc546bba55387162301c6a
+    projectPath: Temp/UnityTempFile-28dfb69038fc546bba55387162301c6a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-2ab02d6681e3a4e99b89032718ae1d93
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-2ab02d6681e3a4e99b89032718ae1d93
+    projectPath: Temp/UnityTempFile-2ab02d6681e3a4e99b89032718ae1d93
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-39f5c3a8013214755ac6e2d0f372046a
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-39f5c3a8013214755ac6e2d0f372046a
+    projectPath: Temp/UnityTempFile-39f5c3a8013214755ac6e2d0f372046a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-3bd3a3ca4f9ac4a89b9f56d010089c8d
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-3bd3a3ca4f9ac4a89b9f56d010089c8d
+    projectPath: Temp/UnityTempFile-3bd3a3ca4f9ac4a89b9f56d010089c8d
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-3f55d880da2e14ec78849a04f14d3e1a
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-3f55d880da2e14ec78849a04f14d3e1a
+    projectPath: Temp/UnityTempFile-3f55d880da2e14ec78849a04f14d3e1a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-483f7f3538cb14a62a4abf5150efad1a
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-483f7f3538cb14a62a4abf5150efad1a
+    projectPath: Temp/UnityTempFile-483f7f3538cb14a62a4abf5150efad1a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-5190c428fef974d80a28010e6ddc536f
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-5190c428fef974d80a28010e6ddc536f
+    projectPath: Temp/UnityTempFile-5190c428fef974d80a28010e6ddc536f
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-52ff5ae6bd59f4657987cf126a01d8f7
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-52ff5ae6bd59f4657987cf126a01d8f7
+    projectPath: Temp/UnityTempFile-52ff5ae6bd59f4657987cf126a01d8f7
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-5316b25bd9f5e4ad4bbc8bd109666dc3
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-5316b25bd9f5e4ad4bbc8bd109666dc3
+    projectPath: Temp/UnityTempFile-5316b25bd9f5e4ad4bbc8bd109666dc3
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-543e67352833d4714baaad1c331a853e
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-543e67352833d4714baaad1c331a853e
+    projectPath: Temp/UnityTempFile-543e67352833d4714baaad1c331a853e
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-571aa3e8f2699481c9917944b58cd285
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-571aa3e8f2699481c9917944b58cd285
+    projectPath: Temp/UnityTempFile-571aa3e8f2699481c9917944b58cd285
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-5b781a83f40424c7fb25296a097f5b7d
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-5b781a83f40424c7fb25296a097f5b7d
+    projectPath: Temp/UnityTempFile-5b781a83f40424c7fb25296a097f5b7d
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-5cd2093425a724c838e920c6ab974a25
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-5cd2093425a724c838e920c6ab974a25
+    projectPath: Temp/UnityTempFile-5cd2093425a724c838e920c6ab974a25
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-5d1bf24a0eaee4319bee91919a2c5c58
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-5d1bf24a0eaee4319bee91919a2c5c58
+    projectPath: Temp/UnityTempFile-5d1bf24a0eaee4319bee91919a2c5c58
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-62f7887bb98eb48ddbf255c90590ff55
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-62f7887bb98eb48ddbf255c90590ff55
+    projectPath: Temp/UnityTempFile-62f7887bb98eb48ddbf255c90590ff55
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-6792b878661764d9dbde0d46f02d966a
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-6792b878661764d9dbde0d46f02d966a
+    projectPath: Temp/UnityTempFile-6792b878661764d9dbde0d46f02d966a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-7f8736554fe754066926b59e1cc7a152
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-7f8736554fe754066926b59e1cc7a152
+    projectPath: Temp/UnityTempFile-7f8736554fe754066926b59e1cc7a152
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-882f3b68181b848ec8bc792dce44805f
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-882f3b68181b848ec8bc792dce44805f
+    projectPath: Temp/UnityTempFile-882f3b68181b848ec8bc792dce44805f
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-89282275c200d4ec2bb2407f7d1fed1c
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-89282275c200d4ec2bb2407f7d1fed1c
+    projectPath: Temp/UnityTempFile-89282275c200d4ec2bb2407f7d1fed1c
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-8e8f4ed7981ba44d49bb4f565ae77a95
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-8e8f4ed7981ba44d49bb4f565ae77a95
+    projectPath: Temp/UnityTempFile-8e8f4ed7981ba44d49bb4f565ae77a95
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-96126f8f79f8e4acf9cb8b2a087a0704
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-96126f8f79f8e4acf9cb8b2a087a0704
+    projectPath: Temp/UnityTempFile-96126f8f79f8e4acf9cb8b2a087a0704
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-990320deb48224aeb82e0fa09fca2361
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-990320deb48224aeb82e0fa09fca2361
+    projectPath: Temp/UnityTempFile-990320deb48224aeb82e0fa09fca2361
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-9d4afd2098dd04d6c813ff2b1268d55e
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-9d4afd2098dd04d6c813ff2b1268d55e
+    projectPath: Temp/UnityTempFile-9d4afd2098dd04d6c813ff2b1268d55e
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-a8bc2741a9ee54d6ab3b0c9d8ce4af6a
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-a8bc2741a9ee54d6ab3b0c9d8ce4af6a
+    projectPath: Temp/UnityTempFile-a8bc2741a9ee54d6ab3b0c9d8ce4af6a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-a96a04c2e508c4ae48e0f4e4e75ed7bb
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-a96a04c2e508c4ae48e0f4e4e75ed7bb
+    projectPath: Temp/UnityTempFile-a96a04c2e508c4ae48e0f4e4e75ed7bb
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-aeaf38c8197644ab99c8dca75923bef3
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-aeaf38c8197644ab99c8dca75923bef3
+    projectPath: Temp/UnityTempFile-aeaf38c8197644ab99c8dca75923bef3
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-b046d239d52ea4852bb44a312a5f7af6
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-b046d239d52ea4852bb44a312a5f7af6
+    projectPath: Temp/UnityTempFile-b046d239d52ea4852bb44a312a5f7af6
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-b12178a8e256c45de9767a62bb9f2ea6
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-b12178a8e256c45de9767a62bb9f2ea6
+    projectPath: Temp/UnityTempFile-b12178a8e256c45de9767a62bb9f2ea6
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-b4371f4745ef9451bad3025e95e73880
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-b4371f4745ef9451bad3025e95e73880
+    projectPath: Temp/UnityTempFile-b4371f4745ef9451bad3025e95e73880
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-ba29e01e612ce4364a3186830b22fa3b
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-ba29e01e612ce4364a3186830b22fa3b
+    projectPath: Temp/UnityTempFile-ba29e01e612ce4364a3186830b22fa3b
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-c9ae85e64b3c64d4ea853ae88bb8df56
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-c9ae85e64b3c64d4ea853ae88bb8df56
+    projectPath: Temp/UnityTempFile-c9ae85e64b3c64d4ea853ae88bb8df56
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-c9fb3f203810042298d4648cb39e8c16
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-c9fb3f203810042298d4648cb39e8c16
+    projectPath: Temp/UnityTempFile-c9fb3f203810042298d4648cb39e8c16
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-d4c6b265aacdb458c90044e069b9c03a
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-d4c6b265aacdb458c90044e069b9c03a
+    projectPath: Temp/UnityTempFile-d4c6b265aacdb458c90044e069b9c03a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-d958474ca1da74b6182d2852bdbd0db2
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-d958474ca1da74b6182d2852bdbd0db2
+    projectPath: Temp/UnityTempFile-d958474ca1da74b6182d2852bdbd0db2
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-d9fed8140fcbc4f5c920bbf74e0e84e8
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-d9fed8140fcbc4f5c920bbf74e0e84e8
+    projectPath: Temp/UnityTempFile-d9fed8140fcbc4f5c920bbf74e0e84e8
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-dae92ecd1dfc44f96bf0928291c4dcfb
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-dae92ecd1dfc44f96bf0928291c4dcfb
+    projectPath: Temp/UnityTempFile-dae92ecd1dfc44f96bf0928291c4dcfb
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-e3ce93a21ae6f4763b5485893390564f
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-e3ce93a21ae6f4763b5485893390564f
+    projectPath: Temp/UnityTempFile-e3ce93a21ae6f4763b5485893390564f
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-ed5c93fde9c834ae29ce68ba800b8778
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-ed5c93fde9c834ae29ce68ba800b8778
+    projectPath: Temp/UnityTempFile-ed5c93fde9c834ae29ce68ba800b8778
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-edd91d35051ad43e7a502a92e7727fd9
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-edd91d35051ad43e7a502a92e7727fd9
+    projectPath: Temp/UnityTempFile-edd91d35051ad43e7a502a92e7727fd9
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-eeecf41c8c8f249138a213046a76a3ee
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-eeecf41c8c8f249138a213046a76a3ee
+    projectPath: Temp/UnityTempFile-eeecf41c8c8f249138a213046a76a3ee
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-f01a742abfc094462a909718c35fb95a
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-f01a742abfc094462a909718c35fb95a
+    projectPath: Temp/UnityTempFile-f01a742abfc094462a909718c35fb95a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-f7922fa0f7dfc4468902d8a276ca60d4
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-f7922fa0f7dfc4468902d8a276ca60d4
+    projectPath: Temp/UnityTempFile-f7922fa0f7dfc4468902d8a276ca60d4
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-fa8cf9552647a43daa5fc31cf574506a
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-fa8cf9552647a43daa5fc31cf574506a
+    projectPath: Temp/UnityTempFile-fa8cf9552647a43daa5fc31cf574506a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Maze Experiment/Temp/UnityTempFile-fd935f4042b64436b83799898f9501e6
+    fullPath: /Users/TylerDansby/MazeExperiment/Maze Experiment/Temp/UnityTempFile-fd935f4042b64436b83799898f9501e6
+    projectPath: Temp/UnityTempFile-fd935f4042b64436b83799898f9501e6
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
