@@ -55,8 +55,7 @@ public class MazeTile : MonoBehaviour
             colors.selectedColor = Color.white;
             GetComponent<Button>().GetComponentInChildren<Text>().text = "F";
             referenceScript.SetIndexValue(Index + "," + State);
-        } else
-        {}
+        }
 
         //set button colors
         GetComponent<Button>().colors = colors;

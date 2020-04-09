@@ -14,77 +14,119 @@ public class Constraints : MonoBehaviour
     public TMP_InputField TimeOutField;
     public TMP_InputField NumAttemptsField;
     public TMP_InputField NumSuccessfulAttemptsField;
+    public Toggle AudioToggle;
 
-    public void Start()
-    {
-        //Initialize constraints
-        PlayerPrefs.SetString("Participant", "");
-        PlayerPrefs.SetString("Egocentric", "false");
-        PlayerPrefs.SetString("Allocentric", "false");
-        PlayerPrefs.SetString("Condition", "A");
-        PlayerPrefs.SetString("TimeOut", "");
-        PlayerPrefs.SetString("NumAttempts", "");
-        PlayerPrefs.SetString("NumSuccessfulAttempts", "");
-    }
+    //Errors
+    public TMP_Text ParticipantError;
+    public TMP_Text TimeOutError;
+    public TMP_Text NumAttemptsError;
+    public TMP_Text NumSuccessError;
+    public GameObject partPanel;
+    public GameObject timePanel;
+    public GameObject attemptsPanel;
+    public GameObject successPanel;
+
 
     public void FillParticipantInput(string number)
     {
-        PlayerPrefs.SetString("Participant", number);
+
+        bool canConvert = int.TryParse(number, out PersistentManager.Instance.participantNumber);
+
+        if (canConvert && PersistentManager.Instance.participantNumber >= 0)
+        {
+            ParticipantError.enabled = false;
+            partPanel.SetActive(false);
+        } else
+        {
+            PersistentManager.Instance.participantNumber = -1;
+            ParticipantError.enabled = true;
+            partPanel.SetActive(true);
+        }
     }
 
     public void FillEgocentricInput(bool ego)
     {
-
-        if (ego)
-        {
-            PlayerPrefs.SetString("Egocentric", "true");
-        }
-        else
-        {
-            PlayerPrefs.SetString("Egocentric", "false");
-        }
+        PersistentManager.Instance.egoCentric = ego;
     }
 
     public void FillAllocentricInput(bool allo)
     {
-        if (allo)
-        {
-            PlayerPrefs.SetString("Allocentric", "true");
-        }
-        else
-        {
-            PlayerPrefs.SetString("Allocentric", "false");
-        }
+        PersistentManager.Instance.alloCentric = allo;
     }
 
     public void FillConditionInput(int con)
     {
+        print(con);
         if(con == 0)
         {
-            PlayerPrefs.SetString("Condition", "A");
+            PersistentManager.Instance.condition = "A";
+
         } else if (con == 1)
         {
-            PlayerPrefs.SetString("Condition", "B");
+            PersistentManager.Instance.condition = "B";
+
         } else
         {
-            PlayerPrefs.SetString("Condition", "C");
+            PersistentManager.Instance.condition = "C";
         }
 
     }
 
     public void FillTimeOutInput(string time)
     {
-        PlayerPrefs.SetString("TimeOut", time);
+        bool canConvert = double.TryParse(time, out PersistentManager.Instance.timeOut);
+
+        if (canConvert && PersistentManager.Instance.timeOut > 0.0)
+        {
+            TimeOutError.enabled = false;
+            timePanel.SetActive(false);
+        }
+        else
+        {
+            PersistentManager.Instance.timeOut = -1;
+            TimeOutError.enabled = true;
+            timePanel.SetActive(true);
+        }
     }
 
     public void FillNumAttemptsInput(string attempt)
     {
-        PlayerPrefs.SetString("NumAttempts", attempt);
+        bool canConvert = int.TryParse(attempt, out PersistentManager.Instance.numAttempts);
+
+        if (canConvert && PersistentManager.Instance.numAttempts > 0)
+        {
+            NumAttemptsError.enabled = false;
+            attemptsPanel.SetActive(false);
+        }
+        else
+        {
+            PersistentManager.Instance.numAttempts = -1;
+            NumAttemptsError.enabled = true;
+            attemptsPanel.SetActive(true);
+
+        }
     }
 
     public void FillNumSuccessfulAttemptsInput(string attempt)
     {
-        PlayerPrefs.SetString("NumSuccessfulAttempts", attempt);
+        bool canConvert = int.TryParse(attempt, out PersistentManager.Instance.numSuccessfulAttempts);
+
+        if (canConvert && PersistentManager.Instance.numSuccessfulAttempts > 0)
+        {
+            NumSuccessError.enabled = false;
+            successPanel.SetActive(false);
+        }
+        else
+        {
+            PersistentManager.Instance.numSuccessfulAttempts = -1;
+            NumSuccessError.enabled = true;
+            successPanel.SetActive(true);
+        }
+    }
+
+    public void FillAudioInput(bool audio)
+    {
+        PersistentManager.Instance.disableAudio = audio;
     }
 
     public void ClearInput()
@@ -98,22 +140,23 @@ public class Constraints : MonoBehaviour
         TimeOutField.text = "";
         NumAttemptsField.text = "";
         NumSuccessfulAttemptsField.text = "";
+        EgocentricToggle.isOn = false;
 
-        //Clear saved input
-        PlayerPrefs.SetString("Participant", "");
-        PlayerPrefs.SetString("Egocentric", "false");
-        PlayerPrefs.SetString("Allocentric", "false");
-        PlayerPrefs.SetString("Condition", "A");
-        PlayerPrefs.SetString("TimeOut", "");
-        PlayerPrefs.SetString("NumAttempts", "");
-        PlayerPrefs.SetString("NumSuccessfulAttempts", "");
     }
 
     private void Update()
     {
         //Check if all fields have been filled
-        if (!PlayerPrefs.GetString("Participant").Equals("") && (PlayerPrefs.GetString("Egocentric") == "true" || PlayerPrefs.GetString("Allocentric") == "true")
-            && !PlayerPrefs.GetString("TimeOut").Equals("") && !PlayerPrefs.GetString("NumAttempts").Equals("") && !PlayerPrefs.GetString("NumSuccessfulAttempts").Equals(""))
+        bool participantSet = PersistentManager.Instance.participantNumber != -1;
+        bool egoSet = PersistentManager.Instance.egoCentric;
+        bool alloSet = PersistentManager.Instance.alloCentric;
+        bool timeSet = PersistentManager.Instance.timeOut != -1;
+        bool attemptsSet = PersistentManager.Instance.numAttempts != -1;
+        bool perfectSet = PersistentManager.Instance.numSuccessfulAttempts != -1;
+
+        //print(participantSet + " " + egoSet + " " + alloSet + " " + timeSet + " " + attemptsSet + " " + perfectSet);
+
+        if (participantSet && (egoSet || alloSet) && timeSet && attemptsSet && perfectSet)
         {
             //Show next button
             NextButton.gameObject.SetActive(true);

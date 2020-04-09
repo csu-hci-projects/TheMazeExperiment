@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -134,6 +134,8 @@ GameObject:
   - component: {fileID: 118620711}
   - component: {fileID: 118620710}
   - component: {fileID: 118620709}
+  - component: {fileID: 118620714}
+  - component: {fileID: 118620715}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -154,8 +156,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 118620708}
-  MoveSpeed: 7
-  TurnSpeed: 0.1
   sceneManager: {fileID: 801640655}
 --- !u!65 &118620710
 BoxCollider:
@@ -231,6 +231,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &118620714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118620708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cebd09352f5924e73a2f9f6c58f3c532, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 118620708}
+--- !u!114 &118620715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118620708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d34aa2ebb608574b94e69dda24d4c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &801640654
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,7 +285,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f68ff399cb4bc454db186ce998003a71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Current: 
+  CurrentScene: 0
+  practiceAttempts: 2
+  trialAttempts: 2
 --- !u!4 &801640656
 Transform:
   m_ObjectHideFlags: 0
@@ -286,8 +313,8 @@ GameObject:
   - component: {fileID: 814088303}
   - component: {fileID: 814088302}
   - component: {fileID: 814088301}
-  - component: {fileID: 814088305}
   - component: {fileID: 814088304}
+  - component: {fileID: 814088305}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -401,17 +428,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 814088300}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e01122be57d234538921beeb973418fc, type: 3}
+  m_Script: {fileID: 11500000, guid: 5459a394fc40d44a9ad3c45893c85ef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 118620708}
   camera: {fileID: 814088300}
-  cX: 0
-  cZ: 0
-  cube: {fileID: 0}
-  floor: {fileID: 0}
-  cubePos: {fileID: 0}
-  cubeRot: {fileID: 0}
   red: {fileID: 2100000, guid: 46616d272e46344de9ab73531c6af0be, type: 2}
   orange: {fileID: 2100000, guid: 74629b83765ca4ad88a9825fc9d7f716, type: 2}
   yellow: {fileID: 2100000, guid: 7fc0b52bea8a64cefa098e9c605deed6, type: 2}
@@ -476,7 +497,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0922afc4b9a4f4adca1f4fd6943d1e80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WaitDelay: 1
   MinMoves: 3
   MaxMoves: 6
 --- !u!82 &1051455987

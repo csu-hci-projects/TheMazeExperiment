@@ -14,4 +14,28 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AllocentricMazeScene.unity
     guid: 2559b363bf1644fceb12e0c0f0863e5f
+  - enabled: 1
+    path: Assets/Scenes/MazeAttemptScene.unity
+    guid: 41488fe481862414687e840a4cb045f5
+  - enabled: 1
+    path: Assets/Scenes/MazeCompletionScene.unity
+    guid: 4c37f1f51a8324556b3c3b31dbb520a4
+  - enabled: 1
+    path: Assets/Scenes/SurveyScene.unity
+    guid: 6ef66497fd9c942f7b5709c97cee7fc2
+  - enabled: 1
+    path: Assets/Scenes/TimeOutScene.unity
+    guid: 279cdc74f521549c2809cb94f1e2bed0
+  - enabled: 1
+    path: Assets/Scenes/BeginScene.unity
+    guid: 650e534b85df54a34909758a0329d795
+  - enabled: 1
+    path: Assets/Scenes/TrialBeginScene.unity
+    guid: 77fbe0d13dc9d442981ea3bea52f5112
+  - enabled: 1
+    path: Assets/Scenes/TrialSecond.unity
+    guid: 005021772cdc4054e8f229233a1792b2
+  - enabled: 1
+    path: Assets/Scenes/BreakScene.unity
+    guid: af39599d9790dda44bb7fd483317aa6d
   m_configObjects: {}
