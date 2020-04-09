@@ -1,14 +1,11 @@
 ﻿<Properties StartupConfiguration="{7CBF02AB-358E-3B2A-7BD0-07EC13A1F12D}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AlloAudio.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Constraints.cs">
     <Files>
-      <File FileName="Assets/Scripts/SceneManager.cs" Line="13" Column="1" />
-      <File FileName="Assets/Scripts/PersistentManager.cs" Line="22" Column="54" />
-      <File FileName="Assets/Scripts/AllocentricMazeBuilder.cs" Line="11" Column="1" />
-      <File FileName="Assets/Scripts/Constraints.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="128" Column="18" />
-      <File FileName="Assets/Scripts/AllocentricPlayerController.cs" Line="121" Column="89" />
-      <File FileName="Assets/Scripts/AlloAudio.cs" Line="64" Column="25" />
-      <File FileName="Assets/Scripts/EgoAudio.cs" Line="67" Column="81" />
+      <File FileName="Assets/Scripts/Constraints.cs" Line="147" Column="26" />
+      <File FileName="Assets/Scripts/SurveyInput.cs" Line="18" Column="34" />
+      <File FileName="Assets/Scripts/PersistentManager.cs" Line="109" Column="40" />
+      <File FileName="Assets/Scripts/SceneManagerScript.cs" Line="268" Column="10" />
+      <File FileName="Assets/Scripts/InfoTracker.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,7 +14,7 @@
             <Node name="Assets" expanded="True">
               <Node name="Mazes" expanded="True" />
               <Node name="Scripts" expanded="True">
-                <Node name="AlloAudio.cs" selected="True" />
+                <Node name="Constraints.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -27,7 +24,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="853e55b5-5812-4e56-b306-c6b7822f2f5d" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d4c42d75-ebdc-4a95-8ed0-e19128983a25" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

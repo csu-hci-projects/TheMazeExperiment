@@ -4,39 +4,12 @@ using UnityEngine;
 using System.IO;
 using System;
 
-public class AllocentricPlayerController : MonoBehaviour
+class AllocentricPlayerController : PlayerController
 {
-    public GameObject player;
 
-    public int MoveSpeed = 2;
-    public float TurnSpeed = 0.2f;
-    public SceneManagerScript sceneManager;
-
-    private string direction;
-    private Vector3 toPosition;
-    private Vector3 offset = new Vector3(0, 3, -7);
-    private bool allowInput = true;
-    private bool movingToTarget = false;
-    private static int mazeSize;
-    private string[,] mazeArray;
-    private int[] playerPosition = { 0, 0 };
-
-    private void Start()
+    // Override Update in abstract PlayerController class
+    protected override void Update()
     {
-        //initialize position to move to, to the current position
-        toPosition = transform.position;
-
-        // Read maze into array from file in PlayerPrefs and set start
-        mazeArray = ReadMazeFile();
-        SetStartingPosition();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        // Update player position for highlighting
-        PlayerPrefs.SetInt("currentX", (int)System.Math.Round((double)player.transform.position.x));
-        PlayerPrefs.SetInt("currentZ", (int)System.Math.Round((double)player.transform.position.z));
 
         // Check if the player is allowed to press another key
         if (allowInput)
@@ -45,36 +18,40 @@ public class AllocentricPlayerController : MonoBehaviour
             // Move up
             if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
             {
+                // gameObject.GetComponent<InfoTracker>().SetDirection("Up", "Allo");
                 // Stop taking player input until coroutine ends
                 allowInput = false;
                 direction = "up";
 
-                StartCoroutine(MovetoIntersection((moveToVector) => {
-
+                StartCoroutine(MovetoIntersection((moveToVector) =>
+                {
                     // Set new vector to move to
                     toPosition = moveToVector;
 
                     // If new vector isn't the same as current, a valid move was made
                     if (!toPosition.Equals(player.transform.position))
                     {
+
                         // Set moving to true
                         movingToTarget = true;
                     }
                     else
                     {
+
                         // New vector is the same, no movement needed so allow input again
-                        allowInput = true;
-                    }
+                        allowInput = true;                    }
                 }));
             }
             // Move down
             else if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
             {
+                // gameObject.GetComponent<InfoTracker>().SetDirection("Down", "Allo");
                 // Stop taking player input until coroutine ends
                 allowInput = false;
                 direction = "down";
 
-                StartCoroutine(MovetoIntersection((moveToVector) => {
+                StartCoroutine(MovetoIntersection((moveToVector) =>
+                {
 
                     // Set new vector to move to
                     toPosition = moveToVector;
@@ -95,11 +72,13 @@ public class AllocentricPlayerController : MonoBehaviour
             // Move left
             else if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
             {
+                // gameObject.GetComponent<InfoTracker>().SetDirection("Left", "Allo");
                 // Stop taking player input until coroutine ends
                 allowInput = false;
                 direction = "left";
 
-                StartCoroutine(MovetoIntersection((moveToVector) => {
+                StartCoroutine(MovetoIntersection((moveToVector) =>
+                {
 
                     // Set new vector to move to
                     toPosition = moveToVector;
@@ -120,11 +99,13 @@ public class AllocentricPlayerController : MonoBehaviour
             // Move right
             else if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
             {
+                // gameObject.GetComponent<InfoTracker>().SetDirection("Right", "Allo");
                 // Stop taking player input until coroutine ends
                 allowInput = false;
                 direction = "right";
 
-                StartCoroutine(MovetoIntersection((moveToVector) => {
+                StartCoroutine(MovetoIntersection((moveToVector) =>
+                {
 
                     // Set new vector to move to
                     toPosition = moveToVector;
@@ -148,7 +129,8 @@ public class AllocentricPlayerController : MonoBehaviour
         // A valid move vector has been found and the player needs to move to it.
         if (movingToTarget == true)
         {
-            
+            //Constant updating
+            PersistentManager.Instance.currentLocation = new int[] { (int)Math.Round(transform.position.x), (int)Math.Round(transform.position.z) };
 
             if (direction == "up")
             {
@@ -157,6 +139,13 @@ public class AllocentricPlayerController : MonoBehaviour
                 // Player reaches new vector
                 if (NearlyEqual(transform.position.x, toPosition.x, 0.1f))
                 {
+                    // Now that player is at new location add it to the VisitedList in InfoTracker
+                    gameObject.GetComponent<InfoTracker>().Visted();
+                    gameObject.GetComponent<InfoTracker>().SetDirection("Up", "Allo");
+
+                    // Set new player position to new
+                    PersistentManager.Instance.currentLocation = new int[] { (int)Math.Round(toPosition[0]), (int)Math.Round(toPosition[2]) };
+
                     CheckFinish();
                 }
             }
@@ -167,6 +156,12 @@ public class AllocentricPlayerController : MonoBehaviour
                 // Player reaches new vector
                 if (NearlyEqual(transform.position.x, toPosition.x, 0.1f))
                 {
+                    // Now that player is at new location add it to the VisitedList in InfoTracker
+                    gameObject.GetComponent<InfoTracker>().Visted();
+                    gameObject.GetComponent<InfoTracker>().SetDirection("Down", "Allo");
+
+                    PersistentManager.Instance.currentLocation = new int[] { (int)Math.Round(toPosition[0]), (int)Math.Round(toPosition[2]) };
+
                     CheckFinish();
                 }
             }
@@ -177,6 +172,12 @@ public class AllocentricPlayerController : MonoBehaviour
                 // Player reaches new vector
                 if (NearlyEqual(transform.position.z, toPosition.z, 0.1f))
                 {
+                    // Now that player is at new location add it to the VisitedList in InfoTracker
+                    gameObject.GetComponent<InfoTracker>().Visted();
+                    gameObject.GetComponent<InfoTracker>().SetDirection("Left", "Allo");
+
+                    PersistentManager.Instance.currentLocation = new int[] { (int)Math.Round(toPosition[0]), (int)Math.Round(toPosition[2]) };
+
                     CheckFinish();
                 }
             }
@@ -187,12 +188,14 @@ public class AllocentricPlayerController : MonoBehaviour
                 // Player reaches new vector
                 if (NearlyEqual(transform.position.z, toPosition.z, 0.1f))
                 {
+                    // Now that player is at new location add it to the VisitedList in InfoTracker
+                    gameObject.GetComponent<InfoTracker>().Visted();
+                    gameObject.GetComponent<InfoTracker>().SetDirection("Right", "Allo");
+
+                    PersistentManager.Instance.currentLocation = new int[] { (int)Math.Round(toPosition[0]), (int)Math.Round(toPosition[2]) };
+
                     CheckFinish();
                 }
-            }
-            else
-            {
-
             }
 
 
@@ -206,24 +209,15 @@ public class AllocentricPlayerController : MonoBehaviour
             move.z = (float)Math.Round(transform.position.z);
             transform.position = Vector3.MoveTowards(transform.position, move, MoveSpeed * Time.deltaTime);
         }
+
+        //PersistentManager.Instance.currentLocation = playerPosition;
     }
 
-    private void CheckFinish()
-    {
-        if (mazeArray[playerPosition[0], playerPosition[1]] == "0F")
-        {
-            sceneManager.SwitchScene();
-        }
 
-        // Allow input again
-        movingToTarget = false;
-        allowInput = true;
-    }
 
     // Movement coroutine - returns vector to move to
     IEnumerator MovetoIntersection(System.Action<Vector3> callback)
     {
-   
         Vector3 moveVector = transform.position;
 
         // Player is trying to move up
@@ -232,6 +226,12 @@ public class AllocentricPlayerController : MonoBehaviour
             // Check above player position
             for (int row = playerPosition[0] - 1; row < mazeArray.GetLength(0); row--)
             {
+                // Out of bounds check
+                if (row < 0)
+                {
+                    break;
+                }
+
                 // Wall
                 if (mazeArray[row, playerPosition[1]] == "1N")
                 {
@@ -259,9 +259,16 @@ public class AllocentricPlayerController : MonoBehaviour
             // Check below player position
             for (int row = playerPosition[0] + 1; row < mazeArray.GetLength(0); row++)
             {
+                // Out of bounds check
+                if (row > 14)
+                {
+                    break;
+                }
+
                 // Wall
                 if (mazeArray[row, playerPosition[1]] == "1N")
                 {
+                    //print("WALL");
                     break;
                 }
                 // Intersection, End, Start
@@ -287,9 +294,16 @@ public class AllocentricPlayerController : MonoBehaviour
             // Check to the left of player position
             for (int col = playerPosition[1] - 1; col < mazeArray.GetLength(1); col--)
             {
+                // Out of bounds check
+                if (col < 0)
+                {
+                    break;
+                }
+
                 // Wall
                 if (mazeArray[playerPosition[0], col] == "1N")
                 {
+                    //print("WALL");
                     break;
                 }
                 // Intersection, End, Start
@@ -315,9 +329,16 @@ public class AllocentricPlayerController : MonoBehaviour
             // Check to the right of player position
             for (int col = playerPosition[1] + 1; col < mazeArray.GetLength(1); col++)
             {
+                // Out of bounds check
+                if (col > 14)
+                {
+                    break;
+                }
+
                 // Wall
                 if (mazeArray[playerPosition[0], col] == "1N")
                 {
+                    //print("WALL");
                     break;
                 }
                 // Intersection, End, Start
@@ -346,76 +367,10 @@ public class AllocentricPlayerController : MonoBehaviour
 
         }
 
-        //print("MoveVector: " + moveVector.x + ", " + moveVector.y + ", " + moveVector.z);
-
         // Call to return vector from coroutine
         callback(moveVector);
+
     }
 
-    // Set starting index
-    void SetStartingPosition()
-    {
-        for (int row = 0; row < mazeArray.GetLength(0); row++)
-        {
-            for (int col = 0; col < mazeArray.GetLength(1); col++)
-            {
 
-                if (mazeArray[row, col] == "0S")
-                {
-                    playerPosition[0] = row;
-                    playerPosition[1] = col;
-                }
-
-            }
-        }
-    }
-
-    // Compares two floats - used for player position comparisons
-    public static bool NearlyEqual(float a, float b, float epsilon)
-    {
-        float absA = Math.Abs(a);
-        float absB = Math.Abs(b);
-        float diff = Math.Abs(a - b);
-
-        if (diff < epsilon)
-        {
-            return true;
-        }
-        return false;
-    }
-
-    // Create 2D array based on maze file
-    string[,] ReadMazeFile()
-    {
-        // TODO: Remove later, for testing purposes only. 
-        PlayerPrefs.SetInt("mazeSize", 15);
-        PlayerPrefs.SetString("file", "Maze-1.txt");
-
-        // Set maze size from PlayerPrefs 
-        mazeSize = PlayerPrefs.GetInt("mazeSize");
-
-        // Create mazeArray with maze size 
-        string[,] mazeArray = new string[mazeSize, mazeSize];
-
-        // Get filename from PlayerPrefs
-        string file = PlayerPrefs.GetString("file");
-
-        // TODO: Add command line checks for which OS is running, then modify PATH from there to load file in
-        //var currentOS = Environment.OSVersion.Platform();
-
-        // Read file into mazeArray
-        string[] lines = File.ReadAllLines(Directory.GetCurrentDirectory() + "/Assets/Mazes/" + file);
-
-        // Read lines into mazeArray 
-        for (int i = 0; i < lines.Length; i++)
-        {
-            string[] splitArray = lines[i].Split(' ');
-            for (int j = 0; j < splitArray.Length; j++)
-            {
-                mazeArray[i, j] = splitArray[j];
-            }
-        }
-
-        return mazeArray;
-    }
 }

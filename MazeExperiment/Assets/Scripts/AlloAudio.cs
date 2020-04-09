@@ -1,13 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using System.IO;
+using UnityEngine;
 using UnityEngine.Networking;
 
 public class AlloAudio : MonoBehaviour
 {
     //Dir path of audio files
-    private string audioDir = Directory.GetCurrentDirectory() + "/Assets/Audio/Ego";
+    private string audioDir = Directory.GetCurrentDirectory() + "/Assets/Audio/Allo";
     //Audio source
     private AudioSource Source;
     //Current sound playing
@@ -16,44 +16,57 @@ public class AlloAudio : MonoBehaviour
     //List of AudioClips
     List<AudioClip> Clips = new List<AudioClip>();
 
+    //See if audio is disabled
+    private bool disabledAudio = PersistentManager.Instance.disableAudio;
+
     private int randomNum;
 
-    bool waitActive = false;
+    private bool waitActive = false;
 
     int counter = 0;
 
-    public int WaitDelay = 4;
+    private int WaitDelay = 3;
     public int MinMoves = 3;
     public int MaxMoves = 6;
+
+    private bool hasAnswered = false;
+
+    private int randomFileIndex;
 
     // Start is called before the first frame update
     void Start()
     {
-        randomNum = Random.Range(MinMoves, MaxMoves);
-
-        Source = GetComponent<AudioSource>();
-
-        //Grabs all files from audioDir
-        string[] files;
-        files = Directory.GetFiles(audioDir);
-
-        for (int i = 0; i < files.Length; i++)
+        if (!disabledAudio)
         {
-            if (files[i].EndsWith(".ogg"))
+            randomNum = Random.Range(MinMoves, MaxMoves);
+
+            Source = GetComponent<AudioSource>();
+
+            //Grabs all files from audioDir
+            string[] files;
+            files = Directory.GetFiles(audioDir);
+
+            for (int i = 0; i < files.Length; i++)
             {
+                if (files[i].EndsWith(".ogg"))
+                {
 
-                StartCoroutine(GetAudioClip(files[i]));
+                    StartCoroutine(GetAudioClip(files[i]));
+
+                }
+
             }
-
         }
     }
 
     void Play(int index)
     {
-
-        Clip = Clips[index];
-        Source.clip = Clip;
-        Source.Play();
+        if (PersistentManager.Instance.mazeArrayIndex < 10)
+        {
+            Clip = Clips[index];
+            Source.clip = Clip;
+            Source.Play();
+        }
 
     }
 
@@ -61,7 +74,7 @@ public class AlloAudio : MonoBehaviour
     void Update()
     {
 
-        if (!waitActive)
+        if (!waitActive && !disabledAudio)
         {
 
             if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
@@ -72,13 +85,43 @@ public class AlloAudio : MonoBehaviour
             if (counter == randomNum)
             {
 
-                int randomFileIndex = (int)Random.Range(0, Clips.Count);
+                randomFileIndex = (int)Random.Range(0, Clips.Count);
                 Play(randomFileIndex);
                 StartCoroutine(Wait((int)Clips[randomFileIndex].length));
                 randomNum = (int)Random.Range(MinMoves, MaxMoves);
                 counter = 0;
 
             }
+        }
+        if (waitActive && !disabledAudio)
+        {
+            if (Input.GetKeyDown(KeyCode.Y) || Input.GetKeyDown(KeyCode.N))
+            {
+
+                hasAnswered = true;
+
+                if (Input.GetKeyDown(KeyCode.Y))
+                {
+
+                    PersistentManager.Instance.audioAnswer = "y";
+                    // Add Audio Answer to csv
+                    //gameObject.GetComponent<InfoTracker>().SetDirection("NULL", "Allo", "y");
+                    GameObject.Find("Cube").GetComponent<InfoTracker>().SetDirection("NULL", "Allo", "y");
+
+                }
+
+                else if (Input.GetKeyDown(KeyCode.N))
+                {
+
+                    PersistentManager.Instance.audioAnswer = "n";
+                    // Add Audio Answer to csv
+                    //gameObject.GetComponent<InfoTracker>().SetDirection("NULL", "Allo", "n");
+                    GameObject.Find("Cube").GetComponent<InfoTracker>().SetDirection("NULL", "Allo", "n");
+
+                }
+
+            }
+
         }
 
     }
@@ -88,6 +131,17 @@ public class AlloAudio : MonoBehaviour
 
         waitActive = true;
         yield return new WaitForSeconds(time + WaitDelay);
+
+        if (!hasAnswered)
+        {
+            PersistentManager.Instance.totalErrors += 1;
+        }
+        else if (hasAnswered)
+        {
+            hasAnswered = false;
+            PersistentManager.Instance.audioAnswer = "";
+        }
+
         waitActive = false;
 
     }
@@ -106,9 +160,32 @@ public class AlloAudio : MonoBehaviour
             else
             {
                 AudioClip myClip = DownloadHandlerAudioClip.GetContent(www);
+                myClip.name = fileName;
                 Clips.Add(myClip);
             }
         }
+    }
+
+    public string GetAudioCheck()
+    {
+
+        if (PersistentManager.Instance.mazeArrayIndex >= 10)
+        {
+            return "0";
+        }
+        else if (waitActive)
+        {
+            Clip = Clips[randomFileIndex];
+            string name = Clip.name;
+            name = name.Split('_', '.')[1];
+
+            return name;
+        }
+        else
+        {
+            return "0";
+        }
+
     }
 
 }

@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class SurveyInput : MonoBehaviour
 {
-    public string Hours = "";
 
     public Button NextButton;
     public Toggle MaleToggle;
@@ -15,11 +14,19 @@ public class SurveyInput : MonoBehaviour
     public Toggle PreferNotToggle;
     public TMP_InputField HoursInput;
 
+    public TMP_Text HoursError;
+    public GameObject hoursPanel;
+
+    private CSVWriter csv;
+    private string lastLine;
+
+    //file.WriteLine("ParticipantID, DataType, MazeType, MazeNumber, AttemptNumber, Movement, Error, AudioCue, Time, MazeLocation, Gender, VideoGame");
+
     public void SetMaleToggle(bool value)
     {
         if (value)
         {
-            PlayerPrefs.SetString("Gender", "Male");
+            PersistentManager.Instance.Gender = "Male";
         }
         
     }
@@ -28,7 +35,7 @@ public class SurveyInput : MonoBehaviour
     {
         if (value)
         {
-            PlayerPrefs.SetString("Gender", "Female");
+            PersistentManager.Instance.Gender = "Female";
         }
     }
 
@@ -36,7 +43,7 @@ public class SurveyInput : MonoBehaviour
     {
         if (value)
         {
-            PlayerPrefs.SetString("Gender", "Other");
+            PersistentManager.Instance.Gender = "Other";
         }
     }
 
@@ -44,31 +51,53 @@ public class SurveyInput : MonoBehaviour
     {
         if (value)
         {
-            PlayerPrefs.SetString("Gender", "Prefer not to say");
+            PersistentManager.Instance.Gender = "Prefer not to say";
         }
     }
 
     public void SetHoursInput(string value)
     {
-        Hours = value;
-        PlayerPrefs.SetString("Video Game Hours", value);
+        bool canConvert = int.TryParse(value, out PersistentManager.Instance.Hours);
+
+        if (canConvert && PersistentManager.Instance.Hours >= 0)
+        {
+            HoursError.enabled = false;
+            hoursPanel.SetActive(false);
+        }
+        else
+        {
+            PersistentManager.Instance.Hours = -1;
+            HoursError.enabled = true;
+            hoursPanel.SetActive(true);
+        }
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.SetString("Gender", "Male");
+        PersistentManager.Instance.Gender = "Male";
+        csv = new CSVWriter();
+        csv.FristLineCheck();
+        lastLine = csv.LastLine();
+        lastLine = lastLine.Replace(", T, ", ", S, ");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Hours != "")
+        if (PersistentManager.Instance.Hours != -1)
         {
             NextButton.gameObject.SetActive(true);
         } else
         {
             NextButton.gameObject.SetActive(false);
         }
+    }
+
+    public void WriteLine() 
+    {
+        lastLine += ", " + PersistentManager.Instance.Gender + ", " + PersistentManager.Instance.Hours;
+        csv.Writer(lastLine);
+
     }
 }
