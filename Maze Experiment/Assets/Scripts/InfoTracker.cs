@@ -7,15 +7,7 @@ public class InfoTracker : MonoBehaviour
 
     public GameObject player;
 
-    // Keep track of time
-    private DateTime endTime;
-    private double timeout;
-
-    // For calling change maze scene 
-    private MainMenu obj = new MainMenu();
-
     private CSVWriter csv;
-
 
     // Start is called before the first frame update
     void Start()
@@ -38,7 +30,6 @@ public class InfoTracker : MonoBehaviour
             PersistentManager.Instance.timedOut = true;
 
             // Change maze scene
-            print("In timeout: endtime - " + PersistentManager.Instance.endTime + "    now - " + now);
             GameObject.Find("SceneManager").GetComponent<SceneManagerScript>().ChangeScene(6);
             PersistentManager.Instance.timedOut = false;
 
@@ -105,7 +96,6 @@ public class InfoTracker : MonoBehaviour
             //Ego maze update .csv file
             if (mazeType.Equals("Ego"))
             {
-                //string audioQue = GameObject.Find("Audio Source").GetComponent<EgoAudio>().GetAudioCheck();
 
                 if (PersistentManager.Instance.isTraining)
                 {
@@ -128,7 +118,6 @@ public class InfoTracker : MonoBehaviour
             //Allo maze update .csv file
             else
             {
-                //string audioQue = GameObject.Find("Audio Source").GetComponent<AlloAudio>().GetAudioCheck();
 
                 if (PersistentManager.Instance.isTraining)
                 {

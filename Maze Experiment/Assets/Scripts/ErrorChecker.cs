@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class ErrorChecker : MonoBehaviour
 {
+    // List of locations the player has been to
     private List<int[]> visitedList = new List<int[]>();
 
+    // Checks for errors made after every move. Called in each PlayerController class.
     public void CheckErrors()
     {
         for (int i = 0; i < visitedList.Count; i++)

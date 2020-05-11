@@ -190,7 +190,6 @@ public class MazeBuilder : MonoBehaviour
     // Find a random start location for test phase
     public void FindRandomStart()
     {
-        //print("RandomStart");
         // FInd all intersections
         List<int[]> listOfIntersections = new List<int[]>();
         for (int i = 0; i < mazeSize; i++)
@@ -262,7 +261,6 @@ public class MazeBuilder : MonoBehaviour
     // Find which wasy to face camera with random start
     public void FindRandomStartDirection()
     {
-        //print("Random Direction");
         int i = PersistentManager.Instance.startLocation[0];
         int j = PersistentManager.Instance.startLocation[1];
 
@@ -371,7 +369,6 @@ public class MazeBuilder : MonoBehaviour
 
     public void Setup()
     {
-        //print("In setup");
         if (PersistentManager.Instance.firstTimeIn)
         {
             //Create list of randomly ordered colors for building sector
@@ -403,8 +400,6 @@ public class MazeBuilder : MonoBehaviour
     // Read maze from PlayerPrefs file 
     public string[,] ReadMazeFile()
     {
-        // TODO: Remove later, for testing purposes only. 
-        PersistentManager.Instance.mazeSize = 15;
 
         int index = PersistentManager.Instance.mazeArrayIndex;
         PersistentManager.Instance.mazeArrayValue = PersistentManager.Instance.listOfMazes[index];
@@ -415,19 +410,27 @@ public class MazeBuilder : MonoBehaviour
         {
             file = "PracticeMaze";
         }
-
-        // Set maze size from PlayerPrefs 
-        mazeSize = PersistentManager.Instance.mazeSize;
-
-        // Create mazeArray with maze size 
-        string[,] mazeArray = new string[mazeSize, mazeSize];
-
+        
         //Read the text from directly from the test.txt file
         TextAsset SourceFile = (TextAsset)Resources.Load("Mazes/" + file, typeof(TextAsset));
         string text = SourceFile.text;
 
         string[] lines = text.Split('\n');
 
+        PersistentManager.Instance.mazeSize = 15;
+        Debug.Log(lines.Length);
+        // Check for 15x15 or 9x9
+        if (lines.Length < 15)
+        {
+            PersistentManager.Instance.mazeSize = 9;
+        }
+
+        // Set maze size from PlayerPrefs 
+        mazeSize = PersistentManager.Instance.mazeSize;
+
+        // Create mazeArray with maze size 
+        string[,] mazeArray = new string[mazeSize, mazeSize];
+        
         // Read lines into mazeArray 
         for (int i = 0; i < mazeSize; i++)
         {
@@ -658,7 +661,6 @@ public class MazeBuilder : MonoBehaviour
         {
             for (int y = j - 1; y < j + 2; y++)
             {
-                //print("Looking at " + x + " " + y);
                 if (IsIndexBounded(mazeSize, x, y))
                 {
                     if (mazeArray[x, y][0] == '0')
@@ -666,7 +668,7 @@ public class MazeBuilder : MonoBehaviour
                         // Light up floor
                         string cubeName = "Floor-" + x.ToString() + "-" + y.ToString() + "(Clone)";
                         GameObject.Find(cubeName).GetComponent<Renderer>().material = lightColorList[FindQuadrant(x, y)];
-                        //print(cubeName + " colored");
+                        
                     }
                 }
             }

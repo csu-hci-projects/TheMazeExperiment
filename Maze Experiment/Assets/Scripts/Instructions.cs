@@ -9,15 +9,10 @@ public class Instructions : MonoBehaviour
     public ScrollRect scrollRect;
     public GameObject nextButton;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
+        // Checks if the scrollbar has hit the bottom and shows the next button if so.
         if (scrollRect.verticalNormalizedPosition <= 0.01f)
         {
             nextButton.SetActive(true);

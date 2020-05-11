@@ -45,6 +45,7 @@ public class AlloAudio : MonoBehaviour
         }
     }
 
+    // Plays an audio clip based on the current index
     void Play(int index)
     {
         Clip = Clips[index];
@@ -94,7 +95,7 @@ public class AlloAudio : MonoBehaviour
                 {
 
                     PersistentManager.Instance.hasAnswered = true;
-                    string rightAnswer = PersistentManager.Instance.egoAudioAnswers[audioFileNumber - 1];
+                    string rightAnswer = PersistentManager.Instance.alloAudioAnswers[audioFileNumber - 1];
 
                     if (Input.GetKeyDown(KeyCode.Y))
                     {
@@ -148,6 +149,7 @@ public class AlloAudio : MonoBehaviour
         }
     }
 
+    // Coroutine to wait for another audio cue to play
     IEnumerator Wait(int time)
     {
 
@@ -191,6 +193,7 @@ public class AlloAudio : MonoBehaviour
 
     }
 
+    // Reads in the answer key to the audio cues
     private void GetAudioAnswers()
     {
         try

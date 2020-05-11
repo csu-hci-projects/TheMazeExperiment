@@ -25,6 +25,7 @@ public class PersistentManager : MonoBehaviour
     public string[,] mazeArray;
     public int mazeSize;
     public bool firstTimeIn;
+    public string newMazeFileName;
     // Path coloring
     public List<Material> colorList;
     public List<Material> lightColorList;
@@ -101,6 +102,7 @@ public class PersistentManager : MonoBehaviour
             mazeArray = new string[15, 15];
             mazeSize = 0;
             firstTimeIn = true;
+            newMazeFileName = "";
             // Path Coloring
             colorList = new List<Material>();
             lightColorList = new List<Material>();
@@ -146,6 +148,7 @@ public class PersistentManager : MonoBehaviour
             randomStartLocation = new int[] { 0, 0 };
             randomStartRotation = new Vector3(0, 0, 0);
 
+            // Call method to initialize the participant number
             GameObject.Find("MainMenu").GetComponent<MainMenu>().InitializePID();
 
 
