@@ -279,7 +279,6 @@ class AllocentricPlayerController : PlayerController
                 // Wall
                 if (mazeArray[row, playerPosition[1]] == "1N")
                 {
-                    //print("WALL");
                     break;
                 }
                 // Intersection, End, Start
@@ -321,7 +320,6 @@ class AllocentricPlayerController : PlayerController
                 // Wall
                 if (mazeArray[playerPosition[0], col] == "1N")
                 {
-                    //print("WALL");
                     break;
                 }
                 // Intersection, End, Start
@@ -363,7 +361,6 @@ class AllocentricPlayerController : PlayerController
                 // Wall
                 if (mazeArray[playerPosition[0], col] == "1N")
                 {
-                    //print("WALL");
                     break;
                 }
                 // Intersection, End, Start

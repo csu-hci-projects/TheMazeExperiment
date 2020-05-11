@@ -14,26 +14,69 @@ public class MainMenu : MonoBehaviour
     public GameObject ConsentScreen;
     public List<int> listOfMazes;
 
-    //private MazeBuilder obj = new MazeBuilder(); 
-
+    // Called when a quit button is pressed
     public void QuitGame(){
     	Application.Quit();
     }
 
+    // Called when "Begin Experiment" button is pressed. Checks to switch
+    // to constraint screen or consent screen based on participant number
     public void ChangeMenuPage()
     {
+        // Participant number is greater than 99 (Set defaults and go to Consent screen)
         if (PersistentManager.Instance.participantNumber >= 100)
         {
             //Set default constraints
-            // TDOD: Modulo ParticipantID and set different constraints based on that.
-            PersistentManager.Instance.alloCentric = true;
-            PersistentManager.Instance.timeOut = 5;
-            PersistentManager.Instance.numAttempts = 3;
-            PersistentManager.Instance.numSuccessfulAttempts = 1;
+            if (PersistentManager.Instance.participantNumber % 6 == 5)
+            {
+                PersistentManager.Instance.egoCentric = true;
+                PersistentManager.Instance.timeOut = 2;
+                PersistentManager.Instance.condition = "A";
+                
+            }
+            else if (PersistentManager.Instance.participantNumber % 6 == 0)
+            {
+                PersistentManager.Instance.alloCentric = true;
+                PersistentManager.Instance.timeOut = 1;
+                PersistentManager.Instance.condition = "A";
+
+            }
+            else if (PersistentManager.Instance.participantNumber % 6 == 1)
+            {
+                PersistentManager.Instance.egoCentric = true;
+                PersistentManager.Instance.timeOut = 2;
+                PersistentManager.Instance.condition = "B";
+
+            }
+            else if (PersistentManager.Instance.participantNumber % 6 == 2)
+            {
+                PersistentManager.Instance.alloCentric = true;
+                PersistentManager.Instance.timeOut = 1;
+                PersistentManager.Instance.condition = "B";
+
+            }
+            else if (PersistentManager.Instance.participantNumber % 6 == 3)
+            {
+                PersistentManager.Instance.egoCentric = true;
+                PersistentManager.Instance.timeOut = 2;
+                PersistentManager.Instance.condition = "C";
+
+            }
+            else if (PersistentManager.Instance.participantNumber % 6 == 4)
+            {
+                PersistentManager.Instance.alloCentric = true;
+                PersistentManager.Instance.timeOut = 1;
+                PersistentManager.Instance.condition = "C";
+
+            }
+
+            PersistentManager.Instance.numAttempts = 20;
+            PersistentManager.Instance.numSuccessfulAttempts = 20;
 
             TitleScreen.SetActive(false);
             ConsentScreen.SetActive(true);
         }
+        // Participant number is less than 100 (Show constraints)
         else
         {
             // Participant ID was not in the specified range
@@ -45,22 +88,22 @@ public class MainMenu : MonoBehaviour
         CreateMazeList();
     }
 
+    // Called from Persistent Manager when the application starts. Attempts to read 
+    // and set participant number from participantID.txt
     public void InitializePID()
     {
         string filePath = Directory.GetCurrentDirectory() + "/participantID.txt";
-        Debug.LogError(filePath);
+        
+        // Check if file exists
         if (File.Exists(filePath))
         {
             try
             {
-                // Create an instance of StreamReader to read from a file.
-                // The using statement also closes the StreamReader.
-                using (StreamReader sr = new StreamReader(filePath))
+                using (StreamReader reader = new StreamReader(filePath))
                 {
                     string line;
-                    // Read and display lines from the file until the end of 
-                    // the file is reached.
-                    while ((line = sr.ReadLine()) != null)
+
+                    while ((line = reader.ReadLine()) != null)
                     {
                         bool canConvert = int.TryParse(line, out PersistentManager.Instance.participantNumber);
 

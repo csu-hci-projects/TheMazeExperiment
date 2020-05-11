@@ -350,6 +350,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40f4e423d0e45528b8c4484b5c3911, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  part: {fileID: 0}
+  TitleScreen: {fileID: 0}
+  ConstraintScreen: {fileID: 0}
+  ConsentScreen: {fileID: 0}
   listOfMazes: 
 --- !u!114 &676805309
 MonoBehaviour:
@@ -974,8 +978,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "The following are experimental trials. If you have any questions, ask
-    your RA now. Otherwise, let\u2019s begin!"
+  m_text: "The following are experimental trials. Let\u2019s begin!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -1044,10 +1047,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 349.40112}
   m_textInfo:
     textComponent: {fileID: 1310505048}
-    characterCount: 106
+    characterCount: 51
     spriteCount: 0
-    spaceCount: 16
-    wordCount: 17
+    spaceCount: 6
+    wordCount: 7
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -1202,7 +1205,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 10}
-  m_SizeDelta: {x: 1469.6, y: 101.7}
+  m_SizeDelta: {x: 739.04016, y: 101.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1570081640
 MonoBehaviour:
